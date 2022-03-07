@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="top"
+        android:background="@color/purple_200"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:padding="10dp"
+            android:onClick="onClickHamBurgIcon"
+            android:background="@drawable/button"
+            android:backgroundTint="@color/white"
+            />
+
+
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Home"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp"
+            android:visibility="gone"
+            android:padding="10dp"
+            android:src="@drawable/ic_notification"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:elevation="5dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/back_main"
+            android:clipChildren="true"
+
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp">
+
+            <ImageView
+                android:id="@+id/btn_home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/selected_button"
+                android:onClick="bottomItemSelected"
+                android:src="@drawable/ic_home"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/btn_statics"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:onClick="bottomItemSelected"
+                android:src="@drawable/ic_statics"
+                app:tint="@color/grey" />
+
+            <ImageView
+                android:id="@+id/btn_news"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:onClick="bottomItemSelected"
+                android:src="@drawable/ic_news"
+                app:tint="@color/grey" />
+
+            <ImageView
+                android:id="@+id/btn_gps"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:onClick="bottomItemSelected"
+                android:src="@drawable/ic_location"
+                app:tint="@color/grey" />
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

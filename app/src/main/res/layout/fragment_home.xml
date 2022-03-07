@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".Fragments.HomeFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_top_home_"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/covid_19"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold"
+
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:ccp_showFullName="true"
+                    app:ccp_showArrow="true"
+                    app:ccp_autoDetectCountry="true"
+                    android:layout_gravity="center"
+                    app:ccp_textSize="15dp"
+                    app:ccp_useFlagEmoji="true"
+                    app:ccp_showPhoneCode="false"
+                    android:background="@drawable/back_default"
+                    android:backgroundTint="@color/white"
+                    app:ccp_showNameCode="false"/>
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/are_you_feeling_sick"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/if_you_feel_sick_with_any_covid_19_symptoms_please_call_or_text_us_for_immediate_help"
+            android:textColor="#E8E7E7"
+            android:textSize="17sp" />
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/lytCallNow"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingEnd="30dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="@drawable/back_default"
+                    android:backgroundTint="#DF2619"
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_call"
+                        app:tint="@color/white" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/call_now"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+
+
+                <LinearLayout
+                    android:id="@+id/lytSendSms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingStart="10dp"
+                    android:background="@drawable/back_default"
+                    android:backgroundTint="#2196F3"
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_gravity="center"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_sms"
+                        app:tint="@color/white" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Send Sms"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Symptoms"
+            android:textColor="@color/grey"
+            android:textSize="23sp"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_symptom_fever"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Fever"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_symptom_cough"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Dry Cough"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginEnd="20dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_symptom_fatigue"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Fatigue"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/prevention_tips"
+        android:textColor="@color/grey"
+        android:textSize="23sp"
+        android:layout_margin="20dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:src="@drawable/avoid_close_contact"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Avoid Close Contact"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:src="@drawable/clean_hand"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Clean Your Hands Often"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="20dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:src="@drawable/wear_mask"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="  Wear A FaceMask"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lytTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="90dp"
+        android:padding="10dp"
+        android:background="@drawable/back_assesment"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_assesment"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Do Your Own Test"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+               android:text="Follow the instructions to do your own test."
+                android:textColor="#E8E7E7"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

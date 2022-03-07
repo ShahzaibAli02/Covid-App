@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/_20sdp"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/btn_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:text="Menu"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@color/teal_700"
+            android:gravity="center"
+            android:textSize="@dimen/_18sdp"
+            />
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardElevation="5sp"
+
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+
+            >
+            <LinearLayout
+                android:id="@+id/lytHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/home"
+                    />
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_home_color"
+                    />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardElevation="5sp"
+
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+
+            >
+            <LinearLayout
+                android:id="@+id/lytStat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/statistics"
+                    />
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_stat_color"
+                    />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardElevation="5sp"
+
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+
+            >
+            <LinearLayout
+                android:id="@+id/lytNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/news"
+                    />
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_news_color"
+                    />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardElevation="5sp"
+
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+
+            >
+            <LinearLayout
+                android:id="@+id/lytMap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Maps"
+                    />
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_location"
+                    />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardElevation="5sp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+
+            >
+            <LinearLayout
+                android:id="@+id/lytExit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Exit"
+                    />
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_exit"
+                    />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

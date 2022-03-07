@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Covid Project</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="covid_19">Covid - 19</string>
+    <string name="are_you_feeling_sick">Are you feeling Sick ?</string>
+    <string name="if_you_feel_sick_with_any_covid_19_symptoms_please_call_or_text_us_for_immediate_help">If you feel sick with any COVID-19 symptoms , please call or text us for immediate help</string>
+    <string name="call_now">Call Now</string>
+    <string name="prevention_tips">Prevention Tips</string>
+    <string name="statistics">Statistics</string>
+    <string name="total_cases">Total Cases</string>
+    <string name="home">Home</string>
+    <string name="news">News</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDioYd868cHeeF5TgZEDYzDvSqD2gaMb6g</string>
+
+
+</resources>
